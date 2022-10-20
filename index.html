@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <body>
         <h1>Verdens tre høyeste skyskrapere </h1>
-        <article>
-            <table border="1" class="striped">
+        <article class="four">
+            <div><table border="1" class="striped">
                 <thread>
                     <tr>
                         <th>Skyskraper</th>
@@ -38,6 +38,7 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
         </article>
         <section>
             <a href="index.burj.html" class="one"></a>
@@ -49,17 +50,18 @@
 <style>
         body{
             background-color: #3f3f3f;
-            border: 1px solid #3f3f3f;
-            width: 100%;
-            aspect-ratio: 1/1;
+            
         }
+        
+    
         h1{
             font-family:Arial, Helvetica, sans-serif ;
-            padding-top: 3rem ;
+            padding-top: 3.5rem;
             padding-bottom: 3rem;
             padding-left: 5px;
             background-color: #3f5765;
             color: #f6f5f4;
+            padding-left: 450px;
         
         }
         section{
@@ -69,7 +71,7 @@
             
         }
         table.striped>tbody>tr:nth-child(odd){
-            background-color: white; 
+            background-color: #f6f5f4; 
             
         }
         table.striped>tbody>tr:nth-child(even){
@@ -77,15 +79,16 @@
             
         }
         table{
-            border-color: white;
+            border-color: #f6f5f4;
             border-collapse: collapse;
             background-color: #bdd4de;
-            margin: 7px ;
+            margin-left: 350px;
+            margin-top: -13px;
             
         }
-        div , a{
-            border: 1px solid #3f3f3f;
-            padding: 10px;
+        a{
+            border: 0 solid #3f3f3f;
+            padding: 1px;
             color: black;
             background-size: cover;
             background-position: center;
@@ -94,12 +97,12 @@
             display: flex;
             align-items: center;
             color: #f6f5f4;
-            font-size: 50%;
             transition: 1s;
         } 
-        div:hover , a:hover {
+         
+        a:hover {
             flex: 3;
-            font-size: 150%;}
+            }
         th{
             background-color: #3f4259;
             color: #f6f5f4;
@@ -111,4 +114,9 @@
         .one {background-image: url("burj_stor.jpg"); }
         .two{background-image: url("Shanghai_stor.jpg")}
         .three {background-image: url("Makkah_stor.jpg") ;}
+        .four{
+            background-color: #bdd4de;
+            margin: 7px;
+            
+        }
     </style>
