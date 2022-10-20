@@ -1,29 +1,113 @@
 <!DOCTYPE html>
 <html lang="no">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" meta charset="UTF-8">
-        <title><b>forfatter</b></title>
-    </head>
-    <style>
-        img {
-            width: 100%;
-            aspect-ratio: 1/1;
-            object-fit: cover;
-        }
-    </style>
+    <meta charset="UTF-8">
     <body>
-        <img src="skitur.png" alt="skitur">
-        <p>
-            <a href="http://nrk.no">nyheter</a>
-        </p>
-            <ul>
-                <li>vi på saltkråkan</li>
-                <li>pippi langstrømpe</li>
-                <li>ronja røverdatter</li>
-                <li>emil i lønneberg</li>
-                <li>mio, min mio</li>
-                <li>test</li>
-            </ul>
-        
+        <h1>Verdens tre høyeste skyskrapere </h1>
+        <article>
+            <table border="1" class="striped">
+                <thread>
+                    <tr>
+                        <th>Skyskraper</th>
+                        <th>Høyde</th>
+                        <th>By</th>
+                        <th>Land</th>
+                        <th>Byggår</th>
+                    </tr>
+                </thread>
+                <tbody>
+                    <tr>
+                        <td>Burj kahalifa</td>
+                        <td>828 m</td>
+                        <td>Dubai</td>
+                        <td>De forente arabiske emirater</td>
+                        <td>2009</td>
+                    </tr>
+                    <tr>
+                        <td>Shanghai Tower</td>
+                        <td>632 m</td>
+                        <td>Shanghai</td>
+                        <td>Kina</td>
+                        <td>2014</td>
+                    </tr>
+                    <tr>
+                        <td>Makkah royal clock tower</td>
+                        <td>601 m</td>
+                        <td>Mekka</td>
+                        <td>Saudi-arabia</td>
+                        <td>2011</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <section>
+            <a href="index.burj.html" class="one"></a>
+            <a href="index.shanghai.html" class="two"></a>
+            <a href="index.makkah.html" class="three"></a>
+        </section>
     </body>
 </html>
+<style>
+        body{
+            background-color: #3f3f3f;
+            border: 1px solid #3f3f3f;
+            
+        }
+        h1{
+            font-family:Arial, Helvetica, sans-serif ;
+            padding-top: 3rem ;
+            padding-bottom: 3rem;
+            padding-left: 5px;
+            background-color: #3f5765;
+            color: #f6f5f4;
+        
+        }
+        section{
+            height: 68vh;
+            background-color: black;
+            display: flex;
+            
+        }
+        table.striped>tbody>tr:nth-child(odd){
+            background-color: white; 
+            
+        }
+        table.striped>tbody>tr:nth-child(even){
+            background-color: #bdd4de;
+            
+        }
+        table{
+            border-color: white;
+            border-collapse: collapse;
+            background-color: #bdd4de;
+            margin: 7px ;
+            
+        }
+        div , a{
+            border: 1px solid #3f3f3f;
+            padding: 10px;
+            color: black;
+            background-size: cover;
+            background-position: center;
+            flex: 1;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            color: #f6f5f4;
+            font-size: 50%;
+            transition: 1s;
+        } 
+        div:hover , a:hover {
+            flex: 3;
+            font-size: 150%;}
+        th{
+            background-color: #3f4259;
+            color: #f6f5f4;
+            padding: 7px 14px;
+        }
+        td{
+            padding: 7px 22px;
+        }
+        .one {background-image: url("burj_stor.jpg"); }
+        .two{background-image: url("Shanghai_stor.jpg")}
+        .three {background-image: url("Makkah_stor.jpg") ;}
+    </style>
